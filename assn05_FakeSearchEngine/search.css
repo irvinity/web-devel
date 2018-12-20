@@ -1,0 +1,10 @@
+.template { display : none; }
+
+.url { font-style : italic; color : green; }
+
+#results{
+    display: none;
+}
+.display-off{
+    display: none;
+}

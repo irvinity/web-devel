@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Special+Elite');
+
+/* Global */
+body{
+    margin: 0;
+    padding: 1rem 15rem;
+    background-color: #fff;
+}
+p, li{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+ol li{
+    padding: 0;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+a:visited{
+    color: purple;
+}
+
+/* Page Title */
+#irving h1{
+    display: inline;
+    margin: 0;
+    color: #000;
+    font-family: 'Special Elite', cursive;
+}
+
+/* Header */
+.header{
+    position: relative;
+    padding: 0;
+    text-align: center;
+}
+.header img{
+    width: 100%;
+    border-radius: 2.5px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);  
+}
+.header div.sticker{
+    position: absolute;
+    left: 80%;
+    top: 75%;
+    font-size: 2em;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-bottom: 2.5px solid rgb(0, 0, 0);
+    border-right: 2.5px solid rgb(0, 0, 0);
+    border-radius: 2.5px;
+}
+.header div.sticker > p{
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    color: #000;
+}
+/* Nav list */
+.header ul{
+    text-align: center;
+    list-style-type: none;
+    padding: 1em 0;
+}
+.header ul{
+    margin: 0;
+    padding: 2em 0;
+}
+.header li{
+    position: relative;
+    display: inline;
+    padding: 0 1em;
+    margin: 0;
+    color: #000;
+}
+.header li > a:hover{
+    color: rgb(255, 100, 55);
+    transition: color ease-in 150ms;
+}
+.header li::after{
+    content: '';
+    display: none;
+    position: absolute;
+    margin-top: 0.25em;
+    width: 150px;
+    height: 100px;
+    left: 0;
+    top: 15px;
+    cursor: pointer;
+    background-color: rgba(20, 20, 20, 0.75);
+    color: whitesmoke;
+    border-radius: 1.5px;
+}
+.header li:nth-child(odd)::after{
+    content: 'n % 2 != 0';
+}
+.header li:nth-child(even)::after{
+    content: 'n % 2 == 0';
+}
+.header li:hover::after{
+    display: inline;
+}
+
+/* Main Content/ All Sections */
+th{
+    font-family: 'Special Elite', cursive;
+    font-size: 1.25em;
+}
+.card-text{
+    text-align: center;
+    vertical-align: center;
+    padding: 0 2.5em;
+}
+.site-img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.hiking, .camping, .kayaking{
+    padding: .75em 0;
+}
+.hiking:hover, .camping:hover, .kayaking:hover{
+    filter: contrast(130%);
+}
+
+/* Section 1 (Hiking) */
+.hiking:hover{
+    background-color: rgb(85, 225, 80);
+    transition: all ease-in-out 500ms;
+}
+.hiking img{
+    border-left: 5px solid rgb(85, 225, 80);
+}
+
+/* Section 2 (Camping) */
+.camping:hover{
+    background-color: rgb(226, 55, 55);
+    transition: all ease-in-out 500ms;
+}
+.camping img{
+    border-left: 5px solid rgb(226, 55, 55);
+}
+
+/* Section 3 (Kayaking) */
+.kayaking:hover{
+    background-color: rgb(65, 65, 215);
+    transition: all ease-in-out 500ms;
+}
+.kayaking img{
+    border-left: 5px solid rgb(65, 65, 215);
+}
+
+/* Footer */
+.footer{
+    padding-top: 1em;
+}
+.footer .line-through{
+    text-decoration: line-through;
+}

@@ -1,0 +1,58 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="search.css">
+</head>
+
+<body>
+
+	<div class="container">
+
+		<h1 class="heading">Search!</h1>
+		<p class="text-muted"><strong>Secret keywords:</strong> cloud, frameworks, pasta <strong>|</strong> cloud and frameworks share a reuslt (Azure)</p>
+		<form class="form">
+			<div class="form-group">
+				<div class="input-group">
+					<input type="text" name="terms" id="search" class="form-control">
+					<span class="input-group-btn"><button id="btn-search" class="btn btn-primary">Go</button></span>
+				</div>
+			</div>
+		</form>
+		<div class="jumbotron jumbotron-fluid display-off">
+			<div class="container">
+				<h1 class="display-4">No results for your words.</h1>
+				<p class="lead">Jumbotron is asking you to think about cooler keywords.</p>
+			</div>
+		</div>
+		<div id="results">
+			<div class="panel">
+				<div class="panel-body">
+					<h3><a href="http://blah.blah.blah">Blah, I say</a></h3>
+					<div class="url">http://blah.blah.blah</div>
+					<div>Relevance: 0.54</div>
+					<div class="excerpt">
+							Excerpty. Excerpty. Excerpty. Excerpty. Excerpty. Excerpty. Excerpty. 
+							Excerpty. Excerpty. Excerpty. Excerpty. Excerpty. Excerpty. Excerpty. 
+							Excerpty. Excerpty. Excerpty. Excerpty. Excerpty. Excerpty. Excerpty. 
+							Excerpty. Excerpty. Excerpty. Excerpty...
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+<script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+<script src="search.js"></script>
+
+</body>
+</html>

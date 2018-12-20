@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!-- saved from url=(0098)https://faculty.utrgv.edu/emmett.tomai/courses/3342/assignments/javascript/jquery_html_events.html -->
+<html class="gr__faculty_utrgv_edu"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width">
+  <title>Assignment02: JavaScript, HTML and jQuery | Irving Alvarez</title>
+  
+  <link rel="stylesheet" href="./Assignment02_ JavaScript, HTML and jQuery_files/bootstrap.min.css">
+
+  <!-- this is so I don't have to give you a separate CSS file -->
+  <style>
+    .hidden {display: none;}
+    .menu { width: 100px;}
+
+  </style>
+
+</head>
+<body data-gr-c-s-loaded="true">
+
+<div class="container">
+
+  <h1>Assignment 2: JavaScript, HTML and jQuery</h1>
+
+  <p>To complete this assignment, download this page and create a local <code>.js</code> to link in.</p>
+
+  <p>For each problem, write JavaScript code <strong>in the linked file</strong>. Use comments to indicate the code for each problem, like:</p>
+
+  <pre>// Solution for problem 1</pre>
+
+  <p>You will edit this file only to link in the JavaScript file and to add JavaScript-friendly tags (e.g. <code>div</code>, <code>span</code>) and <code>class</code> and <code>id</code> attributes. <strong>No inline code or event handlers</strong>.</p>
+
+  <p>Keep in mind that the linked JavaScript page runs top-to-bottom <em>as soon as it is retrieved</em>, not when the page is done loading.</p>
+
+  <p>Submit both files (<code>.html</code> and <code>.js</code>) to the GitHub repository here: </p><pre>https://classroom.github.com/a/EDyZ1L5H</pre><p></p>
+
+  <h2>Using JavaScript...</h2>
+  
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4>Problem 1</h4>
+    <p>Replace the text below with "I hate you, Bob."</p>
+  </div>
+  
+  <div class="panel-body">
+    <p id="wishes">Happy Birthday, Bob!</p>
+  </div>
+</div>  
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4>Problem 2</h4>
+    <p>Change the image below to this one: https://i.ytimg.com/vi/oMQI0bJJOvM/hqdefault.jpg</p>
+    <p><em>(hint: don't change all the images on the page! adding div and span tags and attributes like id and class is part of enabling JavaScript.)</em></p>
+  </div>
+  
+  <div class="panel-body">
+    <p><img id="duckling" src="./Assignment02_ JavaScript, HTML and jQuery_files/tumblr-really-loves-this-duckling-1-28612-1369861410-6_big.jpg"></p>
+  </div>
+</div>  
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4>Problem 3</h4>
+    <p>Make all the images below only 300 pixels wide.</p>
+    <p><em>(hint: you shouldn't have to do the same thing three times!)</em></p>
+  </div>
+  
+  <div class="panel-body furry-mammals">
+    <p><img src="./Assignment02_ JavaScript, HTML and jQuery_files/how-to-get-rid-of-gophers-what-is-more-efficient-gopher-traps-poisons-or-repellents-gopher-control-which-methods-are-approved-by-scientists.jpg"></p>
+    <p><img src="./Assignment02_ JavaScript, HTML and jQuery_files/first-ferret.jpg"></p>
+    <p><img src="./Assignment02_ JavaScript, HTML and jQuery_files/european-badger.jpg.838x0_q80.jpg"></p>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4>Problem 4</h4>
+    <p>When the button below is pushed, make the text red and twice as big.</p>
+  </div>
+  
+  <div class="panel-body">
+    <p><button id="red-trigger" class="btn btn-primary">Click Me</button> AHHHHHH!</p>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4>Problem 5</h4>
+    <p>Make the hidden message below appear when you click on the image.</p>
+  </div>
+  
+  <div id="hidden-cipher" class="panel-body">
+    <p>
+      <img src="./Assignment02_ JavaScript, HTML and jQuery_files/Button Blank Green-01.png">
+      <span class="hidden">Soylent Green is people!</span>
+    </p>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4>Problem 6</h4>
+    <p>Make a thick, yellow border appear on the images below when the mouse is hovering over them. (And go away when it moves off).</p>
+  </div>
+  
+  <div class="panel-body">
+    <div>
+      <img class="menu" src="./Assignment02_ JavaScript, HTML and jQuery_files/enhanced-buzz-1492-1379411828-15.jpg">
+      <img class="menu" src="./Assignment02_ JavaScript, HTML and jQuery_files/_88762487_junk_food.jpg">
+      <img class="menu" src="./Assignment02_ JavaScript, HTML and jQuery_files/seven-mile-beach-grand.jpg">
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4>Problem 7</h4>
+    <p>Echo whatever the user types (letter-by-letter as they type it!) in the first textbox into the second textbox.</p>
+  </div>
+  
+  <div class="panel-body">
+    <input id="input-text" type="textbox">
+    <input type="textbox">
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4>Problem 8</h4>
+    <p>When the user finishes typing in the textbox and leaves it (hits tab or clicks elsewhere), replace what they wrote with "HAHA".</p>
+  </div>
+  
+  <div class="panel-body">
+    <input id="rebel-input" type="textbox">
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4>Problem 9</h4>
+    <p>Make the checkbox enable/disable the drop-down select box.</p>
+  </div>
+  
+  <div class="panel-body">
+    <input id="selectbox-enabler" type="checkbox">Enable
+    <select>
+      <option value="0">Blue</option>
+      <option value="1">3 lbs of cornmeal</option>
+      <option value="2">Cats</option>
+    </select>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4>Problem 10</h4>
+    <p>When the user finishes entering a date in the textbox below, in any valid format, reformat it to the "mm/dd/yyyy" format.</p>
+    <p>Working with dates is annoying. Add the <em>moment.js</em> library and use it for this problem, just like how we linked in the jQuery library.</p>
+      Engage with the <a href="https://momentjs.com/docs/" target="_blank">docs</a> to figure out what it can do for you.<p></p>  </div>
+  
+  <div class="panel-body">
+    <input id="date" type="textbox">
+  </div>
+</div>
+
+</div>
+
+<script src="./Assignment02_ JavaScript, HTML and jQuery_files/jquery.min.js"></script>
+<script src="./Assignment02_ JavaScript, HTML and jQuery_files/moment.min.js"></script>
+
+<script src="drive.js"></script>
+
+</body></html>

@@ -1,0 +1,11 @@
+body{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.delete_btn{
+    background-color: transparent;
+    border: none;
+}
+.delete_btn i{
+    color: rgb(255, 60, 60);
+}

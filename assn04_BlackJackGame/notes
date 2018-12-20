@@ -1,0 +1,38 @@
+RULES
+
+- Played with a standard 52-card deck, with each denomication 
+  assign a point value.
+- The card 2 through 10 are worth their face value.
+- Kings, queens, and jacks are each worth 10.
+- Aces may be used as either 1 or 11.
+
+- The objective for the player is to draw cards totaling
+  closer to 21, without going over, than the dealer's cards.
+
+- Play begins when you place a  bet
+- The player and the dealer are given two cards
+- For the dealer, one card is faceup and the other face down
+- Both are face up for the player
+
+- The dealer plays according to set rules:
+	- Must draw more cards while his
+	  total is 16 or less
+	- Must stand on any total of
+	  17 or more
+
+HIT
+- If the player hits, they will take another card
+  in hopes of getting closer to 21
+	- If the player's total exceeds 21 after
+	  hitting, the player is said to "bust" and
+	  looses the bet.
+- Pressing "plus sign"(hit)
+
+STAND
+- If a player stand, the player elects to draw no more cards
+  in hopes that the current total will beat the dealer.
+- Pressing "checkmark"(stand)
+
+
+
+

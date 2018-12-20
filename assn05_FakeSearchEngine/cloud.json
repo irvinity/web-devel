@@ -1,0 +1,20 @@
+[
+    {
+        "score": "92.11",
+        "url": "https://aws.amazon.com/",
+        "title": "Amazon Web Services",
+        "excerpt": "Whether you're looking for compute power, database storage, content delivery, or other functionality, AWS has the services to help you build sophisticated applications with increased flexibility, scalability and reliability"
+    },
+    {
+        "score": "65.80",
+        "url": "https://www.digitalocean.com/",
+        "title": "Digital Ocean",
+        "excerpt": "Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you’re running one virtual machine or ten thousand."
+    },
+    {
+        "score": "77.45",
+        "url": "https://azure.microsoft.com/en-us/",
+        "title": "Microsoft Azure",
+        "excerpt": "Microsoft Azure is an ever-expanding set of cloud services to help your organization meet your business challenges. It’s the freedom to build, manage, and deploy applications on a massive, global network using your favorite tools and frameworks."
+    }
+]
