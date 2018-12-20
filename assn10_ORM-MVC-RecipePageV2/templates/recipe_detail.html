@@ -1,0 +1,52 @@
+{% extends "base_layout.html" %}
+
+{% block title %}
+Recipe Hub
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <h2 class="display-2">Recipe Hub</h2>
+        </div>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb" style="background: rgb(245, 245, 245)">
+                <li class="breadcrumb-item"><a href="{{ path_for('recipes') }}">All recipes</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{ recipe.name }}</li>
+            </ol>
+        </nav>
+        <div class="row">
+            <div class="col-12">
+                <div class="card mb-3 border border-warning">
+                    <img class="card-img-top" src="{{ recipe.imageurl }}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title recipe-title"><recipename id="{{ recipe.id }}" path="{{ base_url() }}">{{ recipe.name }}</recipename></h5>
+                        <p class="card-text">{{ recipe.description }}</p>
+                    </div>
+                </div>
+                <button class="btn btn-dark">Preptime {{ recipe.prepTime }} mins</button>
+                <button class="btn btn-dark">Total time {{ recipe.totalTime }} mins</button>
+                <div class="m-3"></div>
+                <table class="table">
+                    <thead>
+                        <tr class="table-primary">
+                        <th>Step</th>
+                        <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody class="steps" data-id="{{ recipe.id }}" path="{{ base_url() }}">
+                        {% for step in steps %}
+                        <tr class="recipe-step recipe-step-{{step.stepNumber}}">
+                            <th scope="row">{{ step.stepNumber }}</th>
+                            <td class="recipe-desc">{{ step.description }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row justify-content-end p-3">
+            <button id="add-recipe" type="button" class="btn btn-warning"><i class="fas fa-plus"></i></button>
+        </div>
+    </div>
+{% endblock %}

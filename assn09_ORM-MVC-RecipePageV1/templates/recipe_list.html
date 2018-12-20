@@ -1,0 +1,29 @@
+{% extends "base_layout.html" %}
+
+
+{% block title %}
+Recipe Hub 
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <h2 class="display-2">Recipe Hub</h2>
+    </div>
+    {% for recipe in recipe_list %}
+        <div class="row mb-4">
+            <div class="col-4">
+                <img src="{{ recipe.imageurl }}" class="img-fluid">
+            </div>
+            <div class="col-8">
+                <div class="list-group">
+                    <p class="list-group-item list-group-item-action list-group-item-warning"><strong>Recipe: </strong><a href="{{ path_for('recipe-detail', {'id': recipe.id}) }}">{{recipe.name}}</a></p>
+                    <p class="list-group-item "><strong>Prep time: </strong>{{ recipe.preptime }} mins</p>
+                    <p class="list-group-item"><strong>Total time: </strong>{{ recipe.totaltime }} mins</p>
+                    <p class="list-group-item"><strong>Description: </strong>{{ recipe.description }}</p>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
